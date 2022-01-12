@@ -114,6 +114,8 @@ ul {
   letter-spacing: 0.02em;
   color: #757575;
   fill: #757575;
+  display: flex;
+  align-items: center;
 }
 .header-icon {
   width: 16px;
@@ -154,7 +156,6 @@ ul {
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -248,20 +249,14 @@ ul {
 
 /*-----post-----*/
 
-.hero-icon {
-  justify-content: center;
-  align-items: center;
-}
-
 .hero-icon-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #f5f4fa;
   border-radius: 4px;
-  max-width: 270px;
-  max-height: 120px;
-  text-align: center;
-  align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
 }
 /* ---------Чем мы занимаемся---------- */
@@ -377,7 +372,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .client-list {
   display: flex;
@@ -418,10 +413,6 @@ ul {
   background-color: var(--hero-color-footer);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-right {
-  display: flex;
 }
 
 .logo-footer {
@@ -478,17 +469,17 @@ ul {
 }
 .footer-right {
   margin-left: 70px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: baseline;
 }
 .footer-right-title {
   margin-bottom: 20px;
 }
+.footer-container-general {
+  display: flex;
+  align-items: baseline;
+}
 
 .footer-nav {
   display: flex;
-  justify-content: center;
 }
 .footer-nav-link {
   width: 44px;
@@ -563,6 +554,8 @@ ul {
 .portfolio-btn:hover {
   color: var(--header-logo);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .header-link-visited:first-child {
   color: var(--header-logo);
@@ -631,11 +624,14 @@ ul {
 }
 .portfolio-shadow:hover,
 .portfolio-shadow:focus {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  background: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   display: block;
+}
+.portfolio-shadow {
+  margin: 0;
+  padding: 0;
 }
 
 .poster-hero {
